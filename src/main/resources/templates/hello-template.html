@@ -1,0 +1,7 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<!-- 서버를 통해 값을 받으면 th:text=""의 값으로 치환됨. 서버x면 hello! empty -->
+<!--${}는 model에서 name키의 값을 꺼냄 -->
+<p th:text="'hello ' + ${name}">hello! empty</p>
+</body>
+</html>
