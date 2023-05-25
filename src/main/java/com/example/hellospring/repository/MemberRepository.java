@@ -8,7 +8,8 @@ import java.util.Optional;
 
 public interface MemberRepository {
     Member save(Member member);
-    Optional<Member> findById(Long id);
-    Optional<Member> findBuName(String name);
+    Optional<Member> findById(Long id); //Optional은 null을 감싸서 반환
+    Optional<Member> findByName(String name);
+
     List<Member> findAll();
 }
